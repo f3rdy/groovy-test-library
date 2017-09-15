@@ -1,6 +1,7 @@
 import spock.lang.Specification
 import spock.lang.Shared
 import org.ferdy.groove.MathLibrary
+import org.ferdy.groove.KeyError
 
 class LibraryTest extends Specification {
 
@@ -43,6 +44,6 @@ class LibraryTest extends Specification {
         lib.getItem("non-existing")
 
         then:
-        thrown Exception
+        thrown KeyError
     }
 }

@@ -25,7 +25,7 @@ class MathLibrary {
         if (itemMap.containsKey(key)) {
              return itemMap[key]
         }
-        throw KeyError('key not found')
+        throw new KeyError('key not found')
     }
 }
 
